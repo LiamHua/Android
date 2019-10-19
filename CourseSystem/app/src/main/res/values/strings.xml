@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">蹭课联盟测试版</string>
+
+    <string name="hint_inputphone">请输入您的手机号：</string>
+    <string name="hint_inputVcode">请输入验证码：</string>
+    <string name="bt_gainVcode">获取验证码</string>
+    <string name="bt_login">登\t\t录</string>
+    <string name="bt_forgetPassword">忘记密码？找回密码</string>
+    <string name="bt_signin">注册新帐号</string>
+</resources>

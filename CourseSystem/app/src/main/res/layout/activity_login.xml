@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/login_avatar" />
+
+    <EditText
+        android:id="@+id/ET_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_inputphone"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ET_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="@string/hint_inputVcode"
+            android:inputType="number"
+            android:maxLength="12" />
+
+        <Button
+            android:id="@+id/BT_getCode"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#EB79C9EE"
+            android:layout_gravity="right"
+            android:text="@string/bt_gainVcode" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/BT_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_login"
+        android:text="@string/bt_login"
+        android:textSize="22sp" />
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:onClick="retrieve_Password"
+        android:text="@string/bt_forgetPassword" />
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:onClick="login_password"
+        android:text="使用密码登录"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:onClick="signin"
+            android:text="@string/bt_signin" />
+    </RelativeLayout>
+
+</LinearLayout>

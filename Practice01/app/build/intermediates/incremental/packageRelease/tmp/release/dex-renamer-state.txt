@@ -1,0 +1,4 @@
+#Mon Jul 15 22:06:52 CST 2019
+base.0=/home/liam/AndroidStudioProjects/Practice01/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.practice_01" android:versionName="1.0" android:versionCode="1">
+  <uses-sdk android:targetSdkVersion="29" android:minSdkVersion="23"/>
+    MobSDK.init(this);
+    <application android:supportsRtl="true" android:label="@string/app_name" android:name="com.mob.MobApplication" android:theme="@style/AppTheme" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:allowBackup="true" android:roundIcon="@mipmap/ic_launcher_round" xmlns:android="http://schemas.android.com/apk/res/android">
+    <activity android:name="com.example.practice_01.activity.user"/>
+    <activity android:name="com.example.practice_01.activity.add_course"/>
+    <activity android:name="com.example.practice_01.activity.MainActivity" xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <activity android:name="com.example.practice_01.activity.signin"/>
+    <activity android:name="com.example.practice_01.activity.forgetPasswordActivity"/>
+    <activity android:name="com.example.practice_01.activity.login" xmlns:android="http://schemas.android.com/apk/res/android">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <meta-data xmlns:tools="http://schemas.android.com/tools" android:name="Mob-AppKey" android:value="2bb4fbad76801" tools:node="merge"/>
+    <meta-data xmlns:tools="http://schemas.android.com/tools" android:name="Mob-AppSeret" android:value="c89c95c11ef4b8f39475c9aaa54091dc" tools:node="merge"/>
+    <activity xmlns:tools="http://schemas.android.com/tools" android:windowSoftInputMode="stateHidden|adjustResize" android:name="com.mob.tools.MobUIShell" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar" tools:node="merge"/>
+  </application>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.GET_TASKS"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.INTERNET"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.READ_CONTACTS"/>
+</manifest>
